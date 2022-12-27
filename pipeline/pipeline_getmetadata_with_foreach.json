@@ -1,0 +1,46 @@
+{
+	"name": "pipeline_getmetadata_with_foreach",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach-filenames",
+				"description": "to get the of list of files",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('filenames')",
+						"type": "Expression"
+					},
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"filenames": {
+				"type": "Array",
+				"defaultValue": [
+					"file1",
+					"file2",
+					"file3",
+					"file4"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-12-20T03:29:52Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

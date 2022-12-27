@@ -1,0 +1,9 @@
+{
+	"name": "adf-dev-aspire",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "190509d4-d6c9-4dc4-be0e-57dec01bc915",
+		"tenantId": "130e1dae-a5a4-4452-bdee-41a6b28cbc32"
+	}
+}

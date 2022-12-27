@@ -1,0 +1,41 @@
+{
+	"name": "ds_blob_sneha_ip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureBlobStorage_sneha",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Hospitals_info.txt",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Doctor_id",
+				"type": "String"
+			},
+			{
+				"name": "Doctor_Name",
+				"type": "String"
+			},
+			{
+				"name": "Doctor_address",
+				"type": "String"
+			},
+			{
+				"name": "Doctor_phoneno",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
