@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "adf-dev-aspire"
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"ls_AzureBlobStorage_sneha_connectionString": {
 			"value": ""
 		},
-		"ls_AzureBlobStorage_sneha_connectionString": {
+		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
 		"containerUri": {
